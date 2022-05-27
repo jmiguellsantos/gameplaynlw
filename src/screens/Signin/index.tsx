@@ -16,10 +16,10 @@ export function Signin() {
       />
       <View style={style.content}>
         <Text style={style.title}>
-          Organize {`\n`} suas jogatinas{`\n`} facilmente!
+          Conecte-se{"\n"}e organize suas {"\n"}jogatinas
         </Text>
         <Text style={style.subtitle}>
-          Crie grupos para jogar seus games {`\n`} favoritos com seus amigos
+          Crie grupos para jogar seus games {"\n"} favoritos com seus amigos
         </Text>
         <ButtonIcon title="Entrar com o Discord" activeOpacity={0.7} />
       </View>
