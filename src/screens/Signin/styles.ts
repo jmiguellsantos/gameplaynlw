@@ -9,11 +9,12 @@ export const style = StyleSheet.create({
     backgroundColor: theme.colors.background,
   },
   image: {
-    height: 360,
     width: "100%",
+    height: 360,
   },
   content: {
     marginTop: -40,
+    paddingHorizontal: 50,
   },
   title: {
     color: theme.colors.heading,
