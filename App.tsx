@@ -1,3 +1,4 @@
+import "react-native-gesture-handler";
 import React from "react";
 import { useFonts } from "expo-font";
 import { Inter_400Regular, Inter_500Medium } from "@expo-google-fonts/inter";
@@ -7,9 +8,8 @@ import {
 } from "@expo-google-fonts/rajdhani";
 import AppLoading from "expo-app-loading";
 
-import { Home } from "./src/screens/Home";
+import { Routes } from "./src/routes";
 import { StatusBar } from "react-native";
-import { BackGround } from "./src/components/Background";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,13 +23,13 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-    <BackGround>
+    <>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
-      <Home />
-    </BackGround>
+      <Routes />
+    </>
   );
 }
